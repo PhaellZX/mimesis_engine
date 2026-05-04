@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Banco de Dados
+*.db
+
+# Docker
+.dockerignore
+
+# Engine (Opcional, já que o Docker baixa o Stockfish sozinho)
+engine/
