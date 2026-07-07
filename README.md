@@ -1,66 +1,66 @@
 # 🪄 Mimesis Engine | Chess Intelligence Engine
 
-Mimesis Engine é uma plataforma de xadrez experimental que utiliza Data Mining e Motores de IA para simular o estilo de jogo de usuários reais do Chess.com. O projeto integra uma interface moderna com um backend robusto em Python, permitindo que jogadores treinem contra "clones" digitais baseados em históricos de partidas.
+Mimesis Engine is an experimental chess platform that uses data mining and AI engines to simulate the playing styles of real Chess.com users. The project integrates a modern interface with a robust Python backend, allowing players to train against digital "clones" based on match histories.
 
-## 🧠 A Lógica da Engine
+## 🧠 The Engine Logic
 
-A engine não apenas busca o melhor lance, mas tenta mimetizar o comportamento do jogador alvo:
+The engine not only seeks the best move but also attempts to mimic the target player's behavior:
 
-**Extração de DNA:** O sistema consome a API do Chess.com para identificar padrões de abertura e frequência de vitórias.
+**DNA Extraction:** The system consumes the Chess.com API to identify opening patterns and win frequencies.
 
-**Mimetismo Técnico:** Utiliza o motor Stockfish para validar lances, ajustando a "agressividade" e o nível de erro conforme o perfil identificado.
+**Technical Mimicry:** Uses the Stockfish engine to validate moves, adjusting "aggressiveness" and error levels according to the identified profile.
 
-**Interface Tática:** Desenvolvido com foco em usabilidade, permitindo análise em tempo real e visualização PGN.
+**Tactical Interface:** Developed with a focus on usability, enabling real-time analysis and PGN visualization.
 
-**🛠️ Tecnologias Utilizadas Backend:** Python 3.12, Flask.
+**🛠️ Backend Technologies Used:** Python 3.12, Flask.
 
-**Engine de Xadrez:** Stockfish 16.1.
+**Chess Engine:** Stockfish 16.1.
 
 **Frontend:** HTML5, CSS3 (Flexbox/Grid), Chessboard.js, Chess.js.
 
-**Infraestrutura:** Docker & Gunicorn.
+**Infrastructure:** Docker & Gunicorn.
 
-🚀 Como Executar o Projeto (Localmente)
-Você pode rodar o projeto de forma isolada e segura utilizando o Docker.
+🚀 How to Run the Project (Locally)
+You can run the project in an isolated and secure manner using Docker.
 
-## Pré-requisitos
-Docker instalado (testado no Linux Mint).
+## Prerequisites
+Docker installed (tested on Linux Mint).
 
-## Passo a Passo
+## Step-by-Step
 
-1. **Clonar o repositório:**
+1. **Clone the repository:**
 
 ```bash
 git clone https://github.com/PhaellZX/mimesis_engine.git
 cd mimesis-avalanche
 ```
 
-2. **Construir a imagem Docker:**
+2. **Build the Docker image:**
 
-Este comando instala todas as dependências, incluindo o Python, as bibliotecas de xadrez e o motor Stockfish dentro de um container.
+This command installs all dependencies—including Python, chess libraries, and the Stockfish engine—inside a container.
 
 ```bash
 docker build -t mimesis-app .
 ```
 
-3.  **Executar o container:**
-    O projeto estará disponível na porta 5000 do seu navegador.
+3.  **Run the container:**
+
+The project will be available on port 5000 in your browser.
     
 ```bash
     docker run -p 5000:5000 mimesis-app
 ```
 
-4.  **Acessar a aplicação:**
-    Abra o navegador e acesse: `http://localhost:5000`
+4.  **Access the application:**
+Open your browser and go to: `http://localhost:5000`
 
 ---
 
-## 📈 Roadmap & Evolução
-- [x] Integração com API Chess.com.
-- [x] Dockerização do ambiente de execução.
-- [ ] Implementação de Redes Neurais para predição de lances específicos do usuário.
-- [ ] Interface mobile-friendly.
+## 📈 Roadmap & Evolution
+- [x] Integration with the Chess.com API.
+- [x] Dockerization of the runtime environment.
+- [ ] Implementation of Neural Networks to predict user-specific moves.
+- [ ] Mobile-friendly interface.
 
-## ✒️ Autor
-**Raphael** – Especialista em Tecnologia em Analista e Desenvolvimento de Sistemas.
-
+## ✒️ Author
+**Raphael** – Specialist in Systems Analysis and Development.
